@@ -1,0 +1,12 @@
+CACHE MANIFEST
+
+CACHE:
+/resources/css/default.css
+/resources/css/grid.min.css
+/resources/css/mobile.css
+/resources/js/loadfeed.js
+/images/loader.gif
+/index.html
+
+NETWORK:
+*

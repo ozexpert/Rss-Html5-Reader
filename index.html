@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html manifest="/manifest.appcache">
+	<head>
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width" />
+
+		<title>RSS Reader - by Young K. Park</title>
+
+		<script src="https://www.google.com/jsapi?key=ABQIAAAA_2iFsKsvxyuwFuP3K4bE1BTvywH2vhaTXkd89Tz_KidvPkZEwxSec8KthtOtV8NVD2fSqG7ZcT99fA"></script>
+
+		<!--<link rel="stylesheet" type="text/css" href="resources/css/html5reset.min.css">-->
+		<link rel="stylesheet" href="resources/css/grid.min.css" />
+		<link rel="stylesheet" href="resources/css/mobile.css" />
+		<link rel="stylesheet" href="resources/css/default.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="twelve columns">
+						<h1><img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered" class="logo"> RSS Reader</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="row hide" id="feed_detail_container">
+					<div class="two columns">
+						<nav>
+							<ul>
+								<li>
+									<button type="button" id="btn_back" class="nav_button">
+										<span></span>
+										Back
+									</button>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="ten columns">
+						<div class="feed_detail">
+							<div id="feed_detail"></div>
+						</div>
+					</div>
+				</div>
+				<div id="feed_container" class="row feedmain">
+					<div class="three columns"></div>
+					<div class="three columns"></div>
+					<div class="three columns"></div>
+					<div class="three columns"></div>
+				</div>
+				<div class="row feedmain">
+					<div class="twelve columns center">
+						<button type="button" id="btn_more" class="btn_more button">More</button>
+						<img src="resources/images/loader.gif" alt="loading ..." class="hide btn_more" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="center">
+			Copyright &copy; 2011. Young K. Park
+		</footer>
+
+		<div id="pop_note" class="hide pop">
+			<span class="icon-close" id="icon_close"></span>
+			<div class="bd">
+				<button class="button tg-panel" type="button" id="btn_note">Post it!</button>
+				<div class="hide tg-panel">
+					<textarea id="txt_note" placeholder="Add your notes"></textarea>
+					<div class="right">
+						<button class="button" type="button" id="btn_insert_note">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="resources/js/3rdparty/modernizr.custom.83297.js"></script>
+		<script src="resources/js/loadfeed.js"></script>
+	</body>
+</html>

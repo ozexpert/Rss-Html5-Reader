@@ -1,0 +1,190 @@
+
+/* ----------------------------------------------------------------------------
+ *  Regular Styles
+ ---------------------------------------------------------------------------- */
+
+	/* Dom
+	 ------------------------------------------------------------------------ */
+	body {
+		background-color: #341f2a;
+		font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+	}
+	header, section, footer, nav {
+		display: block;
+	}
+	nav {
+		background-color: #fff;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		margin-top: 5px;
+	}
+	nav ul {
+		list-style: none;
+		padding: 0; margin: 0;
+	}
+	nav li {
+		padding: 5px;
+	}
+	nav button.nav_button {
+		background-color: #000;
+		color: #fff;
+		padding: 5px 10px;
+		border: none;
+		margin: 0 0 0 10px;
+		cursor: pointer;
+		position: relative;
+	}
+	nav button.nav_button:after {
+		content: ' ';
+		height: 0;
+		position: absolute;
+		width: 0;
+
+		border: 13px solid transparent;
+		border-right-color: #000;
+		right: 100%;
+		top: 0;
+	}
+	nav button.nav_button img {
+		vertical-align: middle;
+	}
+	header img.logo {
+		vertical-align: middle;
+	}
+	footer {
+		color: #fb9553;
+		font-size: 80%;
+	}
+
+	/* IDs
+	 ------------------------------------------------------------------------ */
+
+	/* Classes
+	 ------------------------------------------------------------------------ */
+	.hide {
+		display: none;
+	}
+	.center {
+		text-align: center;
+	}
+	.right {
+		text-align: right;
+	}
+	div.container h1 {
+		color: #fb9553;
+		font-size: 400%;
+		padding: 0; margin: 0;
+	}
+	div.eachfeed, div.feed_detail {
+		background-color: #fff;
+		-webkit-box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
+		-moz-box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
+		box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
+		padding: 5px;
+		font-size: 80%;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		margin-top: 5px;
+		clear: both;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	div.eachfeed img {
+		vertical-align: top;
+	}
+	div.eachfeed:hover {
+		background-color: #f2f2f2;
+		cursor: pointer;
+	}
+	div.eachfeed div.clear {
+		clear: both;
+	}
+	div.feed_detail {
+		padding: 20px;
+	}
+	b.highlighted {
+		background-color: yellow;
+		font-weight: bold;
+		display: inline;
+		padding: 2px;
+	}
+	div.pop {
+		background-color: #FFFF99;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
+		-moz-box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
+		box-shadow: 0 2px 3px rgba(34, 25, 25, 0.4);
+		float: left;
+		padding: 10px;
+		position: absolute;
+	}
+	div.pop:after {
+		content: ' ';
+		height: 0;
+		position: absolute;
+		width: 0;
+
+		border: 13px solid transparent;
+		border-bottom-color: #FFFF99;
+		bottom: 100%;
+	}
+	button.button {
+		color: #333;
+		font: bold 12px;
+		text-decoration: none;
+		padding: 7px 12px;
+		position: relative;
+		display: inline-block;
+		text-shadow: 0 1px 0 #fff;
+		background: #f3f3f3;
+		background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#f5f5f5), to(#f1f1f1));
+		background: -moz-linear-gradient(linear, 0% 40%, 0% 70%, from(#f5f5f5), to(#f1f1f1));
+		border: solid 1px #dcdcdc;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-transition: border-color 0.218s;
+		-moz-transition: border-color 0.218s;
+		-o-transition: border-color 0.218s;
+		transition: border-color 0.218s;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	button.button:hover {
+		color: #6e6e6e;
+		border-color: #999;
+		-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	}
+	button.button:active {
+		color: #000;
+		border-color: #444;
+	}
+	span.icon-close {
+		display: inline-block;
+		width: 22px; height: 22px;
+		background: url("../images/icon-close.png") no-repeat 0 0;
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		cursor: pointer;
+	}
+/* ----------------------------------------------------------------------------
+ * Optimized for Mobile
+ ---------------------------------------------------------------------------- */
+	@media only screen and (max-width: 767px) {
+		header img.logo {
+			width: 33px;
+			height: 34px;
+		}
+		div.container h1 {
+			font-size: 250%;
+		}
+		div.eachfeed img {
+			vertical-align: middle;
+		}
+	}
